@@ -1,0 +1,27 @@
+Write an expression that will extract all phone numbers into groups
+
+Go to https://regexr.com/ to test your regular expression
+
+Paste the text below into the text field on regexr.com
+
+	Leon Graham
+	2686 Willow Oaks Lane
+	Lafayette, LA 70507
+	337-335-9111
+	LeonPGraham@armyspy.com
+
+	Alexandra Bender
+	659 Johnny Lane
+	New Berlin, WI 53151
+	414-333-1869
+	AlexandraJBender@jourrapide.com
+
+	Luis Bouchard
+	95 Twin Oaks Drive
+	Grand Rapids, MI 49503
+	231-514-4899
+	LuisCBouchard@dayrep.com
+
+
+The way I solve the problem
+regexr.com/4i60b
