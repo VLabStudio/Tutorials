@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<people>
+  <person id="2">
+    <name>Bob</name>
+    <address>
+      <road>Spring Street</road>
+      <city>New York</city>
+      <zipcode>10012</zipcode>
+    </address>
+  </person>
+  <person id="2">
+    <name>Smith</name>
+    <address>
+      <road>Briarwood Road</road>
+      <city>Arma</city>
+      <zipcode>20315</zipcode>
+    </address>
+  </person>
+</people>

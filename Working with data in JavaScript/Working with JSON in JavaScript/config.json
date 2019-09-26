@@ -1,0 +1,14 @@
+{
+    "connectionString": "192.168.1.234/db",
+    "apiKey": "2i3f2399g23y43q9o",
+    "services": [
+        {
+            "id": 1,
+            "name": "products"
+        },
+        {
+            "id": 2,
+            "name": "users"
+        }
+    ]
+}
