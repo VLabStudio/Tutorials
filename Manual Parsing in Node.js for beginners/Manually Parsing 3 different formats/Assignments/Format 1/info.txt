@@ -1,0 +1,35 @@
+For extra points don't use the lookup table (language-code-table.json), make your own. The output data should look like this.
+
+[
+    {
+        "id": "1",
+        "quality": "low",
+        "timestamp": "Sun Oct 2019",
+        "language": "English"
+    },
+    {
+        "id": "2",
+        "quality": "medium",
+        "timestamp": "Sun Oct 2019",
+        "language": "Danish"
+    },
+    {
+        "id": "3",
+        "quality": "high",
+        "timestamp": "Sun Oct 2019",
+        "language": "English (United Kingdom)"
+    }
+]
+
+quality, timestamp, language, id
+
+Quality
+	low quality 0 to 100
+	medium quality 100 to 200
+	high quality 200 to 300
+	
+Timestamp
+	timestamp to day month year
+
+Language
+	language code to full country name

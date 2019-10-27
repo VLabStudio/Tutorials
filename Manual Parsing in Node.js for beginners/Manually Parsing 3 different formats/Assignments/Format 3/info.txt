@@ -1,0 +1,41 @@
+Extract the method from the log, the output data should look like this.
+
+[
+    {
+        "method": "POST",
+        "message": " /api/authors/_search websiteapi.vincentlab.net"
+    },
+    {
+        "method": "OPTIONS",
+        "message": " /api/articles/_search websiteapi.vincentlab.net"
+    },
+    {
+        "message": "collection.ensureIndex is deprecated. Use createIndexes instead."
+    },
+    {
+        "message": "collection.ensureIndex is deprecated. Use createIndexes instead."
+    },
+    {
+        "message": "E11000 duplicate key error collection: production.subscribers index: email_1 dup key"
+    },
+    {
+        "message": "title must be a string"
+    },
+    {
+        "message": "firstName must be a string"
+    },
+    {
+        "message": "title must be a string"
+    },
+    {
+        "method": "POST",
+        "message": " websiteapi.vincentlab.net"
+    },
+    {
+        "method": "POST",
+        "message": " websiteapi.vincentlab.net"
+    },
+    {
+        "message": "Mongoose connected successfully"
+    }
+]

@@ -1,0 +1,11 @@
+POST /api/authors/_search websiteapi.vincentlab.net
+OPTIONS /api/articles/_search websiteapi.vincentlab.net
+collection.ensureIndex is deprecated. Use createIndexes instead.
+collection.ensureIndex is deprecated. Use createIndexes instead.
+E11000 duplicate key error collection: production.subscribers index: email_1 dup key
+title must be a string
+firstName must be a string
+title must be a string
+POST websiteapi.vincentlab.net
+POST websiteapi.vincentlab.net
+Mongoose connected successfully

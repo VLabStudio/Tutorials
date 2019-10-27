@@ -1,0 +1,4 @@
+x-content-type-options: nosniff
+x-frame-options: deny
+x-xss-protection: 1; mode=block
+feature-policy: camera 'none'; microphone 'none'; midi 'none'; payment 'none'; vr 'none';

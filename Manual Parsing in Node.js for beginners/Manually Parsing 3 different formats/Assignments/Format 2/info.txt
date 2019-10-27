@@ -1,0 +1,103 @@
+For extra points don't use the lookup table (lookup-table.json), make your own. The output data should look like this.
+
+[
+    {
+        "colour": "black",
+        "brands": "Kia Niro PHEV",
+        "fuelType": "diesel"
+    },
+    {
+        "colour": "green",
+        "brands": "Kia Niro 2 hybrid",
+        "fuelType": "diesel"
+    },
+    {
+        "colour": "gray",
+        "brands": "Citroen C3 BlueHDi",
+        "fuelType": "gas"
+    },
+    {
+        "colour": "blue",
+        "brands": "Toyota Prius Plug-in",
+        "fuelType": "diesel"
+    },
+    {
+        "colour": "red",
+        "brands": "Hyundai Ioniq PHEV",
+        "fuelType": "gas"
+    }
+]
+
+colour, brands, fuel type, transmissions
+
+Colour
+	0000 - black
+	0001 - blue
+	0010 - green
+	0011 - red
+	0100 - purple
+	0101 - gray
+	0110 - yellow
+	0111 - 
+	1000 - 
+	1001 - 
+	1010 - 
+	1011 - 
+	1100 - 
+	1101 - 
+	1110 - 
+	1111 - 
+
+Brands
+	0000 - Smart EQ ForFour
+	0001 - BMW i3 ReX 
+	0010 - Toyota Prius Plug-in
+	0011 - Hyundai Ioniq PHEV
+	0100 - Kia Niro PHEV
+	0101 - Toyota Prius
+	0110 - Toyota Yaris
+	0111 - Toyota Auris
+	1000 - Lexus CT200h
+	1001 - Kia Niro 2 hybrid
+	1010 - Smart ForTwo
+	1011 - Toyota Aygo
+	1100 - Citroen C1
+	1101 - Peugeot 108
+	1110 - Peugeot 308
+	1111 - Citroen C3 BlueHDi
+
+Fuel type
+	0000 - diesel
+	0001 - gas
+	0010 - electric
+	0011 -
+	0100 -
+	0101 -
+	0110 -
+	0111 -
+	1000 -
+	1001 -
+	1010 -
+	1011 -
+	1100 -
+	1101 -
+	1110 -
+	1111 -
+
+Transmissions
+	0000 - automatic
+	0001 - manual
+	0010 - hybrid
+	0011 -
+	0100 -
+	0101 -
+	0110 -
+	0111 -
+	1000 -
+	1001 -
+	1010 -
+	1011 -
+	1100 -
+	1101 -
+	1110 -
+	1111 -
