@@ -1,0 +1,18 @@
+{
+  "name": "template-generator",
+  "version": "1.0.0",
+  "description": "A template generator",
+  "main": "main.js",
+  "bin": {
+    "tg": "./main.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "prompts": "^2.3.0"
+  }
+}
