@@ -1,2 +1,2 @@
-# Tutorials
-All of the smaller projects I have done in tutorials / project files
+# General info
+All the smaller projects I've done in tutorials, on my YouTube channel [Vincent Lab.](https://www.youtube.com/channel/UCMA8gVyu_IkVIixXd2p18NQ)
