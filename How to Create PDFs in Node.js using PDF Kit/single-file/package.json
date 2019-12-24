@@ -1,0 +1,16 @@
+{
+  "name": "pdf-kit-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pdfkit": "^0.11.0",
+    "voilab-pdf-table": "^0.5.0"
+  }
+}

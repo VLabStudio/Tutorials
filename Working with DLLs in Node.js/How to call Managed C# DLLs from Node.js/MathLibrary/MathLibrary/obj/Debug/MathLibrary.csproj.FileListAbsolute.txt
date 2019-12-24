@@ -1,0 +1,6 @@
+F:\One Drive\OneDrive\Vincent\Programming\C Sharp\Projects\MathLibrary\MathLibrary\bin\Debug\MathLibrary.dll
+F:\One Drive\OneDrive\Vincent\Programming\C Sharp\Projects\MathLibrary\MathLibrary\bin\Debug\MathLibrary.pdb
+F:\One Drive\OneDrive\Vincent\Programming\C Sharp\Projects\MathLibrary\MathLibrary\obj\Debug\MathLibrary.csprojAssemblyReference.cache
+F:\One Drive\OneDrive\Vincent\Programming\C Sharp\Projects\MathLibrary\MathLibrary\obj\Debug\MathLibrary.csproj.CoreCompileInputs.cache
+F:\One Drive\OneDrive\Vincent\Programming\C Sharp\Projects\MathLibrary\MathLibrary\obj\Debug\MathLibrary.dll
+F:\One Drive\OneDrive\Vincent\Programming\C Sharp\Projects\MathLibrary\MathLibrary\obj\Debug\MathLibrary.pdb
