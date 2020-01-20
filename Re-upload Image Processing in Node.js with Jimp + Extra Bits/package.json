@@ -1,0 +1,17 @@
+{
+    "name": "javascript-image-manipulation",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@jimp/plugin-circle": "^0.9.3",
+        "@jimp/plugin-fisheye": "^0.9.3",
+        "jimp": "^0.8.4"
+    }
+}
