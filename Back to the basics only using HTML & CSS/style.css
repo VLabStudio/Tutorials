@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #232123;
+    color: #FFFFFF;
+}
+
+a {
+    color: #01FC77;
+}
+
+ul {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#main {
+    width: 50%;
+    border: 4px solid #01FC77;
+    margin: auto;
+    margin-top: 1%;
+}
+
+#title {
+    background: #444444;
+    border-bottom: 4px solid #01FC77;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+}
+
+#content {
+    font-family: "Liberation Sans", sans-serif;
+    margin: 2%;
+}
+
+#content h2, h3, h4, p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

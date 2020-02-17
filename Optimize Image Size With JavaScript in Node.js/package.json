@@ -1,0 +1,16 @@
+{
+  "name": "resize-and-optimize-images",
+  "version": "1.0.0",
+  "description": "",
+  "main": "reduce.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0"
+  }
+}

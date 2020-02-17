@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta  name="description" content="Vincent Lab is a platform for people to learn programming while having the environment in mind."/>
+    <meta name="theme-color" content="#43a047" />
+    <title>Vincent Lab - The Difference Between Regular Functions and Arrow Functions</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="title">
+        <h1>The Difference Between Regular Functions and Arrow Functions</h1>
+      </div>
+      <div id="content">
+        <p>Other then the syntactical differences. The main difference is the way the this keyword behaves? In an arrow function, the this keyword remains the same throughout the life-cycle of the function and is always bound to the value of this in the closest non-arrow parent function. Arrow functions can never be constructor functions so they can never be invoked with the new keyword. And they can never have duplicate named parameters like a regular function not using strict mode.</p>
+        <p>Here are a few code examples to show you some of the differences.</p>
+        <h4><b>The this keyword with an arrow function and a regular function.</b></h4>
+        <code>
+        this.name = "Bob";
+
+        const person = {
+            name: "Jon",
+
+            // Regular function
+            func1: function () {
+                console.log(this);
+            },
+
+            // Arrow function
+            func2: () => {
+                console.log(this);
+            }
+        }
+
+        person.func1(); // Call the Regular function
+        // Output: {name:"Jon", func1:[Function: func1], func2:[Function: func2]}
+
+
+        person.func2(); // Call the Arrow function
+        // Output: {name:"Bob"}
+        </code>
+        <h4><b>The new keyword with an arrow function.</b></h4>
+        <code>
+        const person = (name) => console.log(`Your name is ${name}`);
+        const bob = new person("Bob");
+        // Uncaught TypeError: person is not a constructor
+        </code>
+        <p>If you want to see a visual presentation on the differences, then you can see this video. <a href="https://www.youtube.com/watch?v=0KS2cf8Ng_U&feature=emb_title" target="_blank">What's the difference between Functions and Arrow Functions</a></p>
+    </div>
+    </div>
+  </body>
+</html>

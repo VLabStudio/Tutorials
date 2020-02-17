@@ -1,0 +1,14 @@
+{
+  "name": "color-palette",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lqip": "^2.1.0"
+  }
+}

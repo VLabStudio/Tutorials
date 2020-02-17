@@ -1,0 +1,16 @@
+#gameState {
+    text-align: center;
+}
+
+#game {
+    width: 22%;
+    margin: auto;
+}
+
+.square {
+    margin: -5px;
+    border: 5px solid #000000;
+    display: inline-block;
+    width: 135px;
+    height: 135px;
+}
