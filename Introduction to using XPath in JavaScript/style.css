@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#red-box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+}
+
+#green-box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    display: inline-block;
+}
+
+#blue-box {
+    width: 404px;
+    height: 404px;
+    background-color: blue;
+    display: inline-block;
+}
+
+#yellow-box {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: inline-block;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "get-started-with-js-ipfs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bs58": "^4.0.1",
+    "ipfs": "^0.41.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
