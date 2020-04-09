@@ -1,0 +1,13 @@
+date: 2019-08-07T00:00:00.000Z
+customer:
+  first_name: Dorothy
+  family_name: Gale
+items:
+  - name: Water Bottle
+    description: Water Bottle (Filled)
+    price: 1.47
+    quantity: 4
+  - name: Knife and fork set
+    description: Knife and fork set in stainless steel
+    price: 133.7
+    quantity: 1
