@@ -1,0 +1,18 @@
+{
+  "name": "different-packages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "boolean": "^3.0.1",
+    "bytes": "^3.1.0",
+    "email-addresses": "^3.1.0",
+    "humanparser": "^1.11.0",
+    "ua-parser-js": "^0.7.21"
+  }
+}
