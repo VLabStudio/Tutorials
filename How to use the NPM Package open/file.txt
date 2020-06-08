@@ -1,0 +1,1 @@
+Open stuff like URLs, files, executables. Cross-platform.
