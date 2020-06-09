@@ -1,6 +1,6 @@
 let x = true;
 
-const square = [[], [], []];
+const squares = [[], [], []];
 
 let row = 1;
 let column = 1;
@@ -24,12 +24,11 @@ for (let i = 0; i < 9; i++) {
         }
 
         check();
-
     });
 
     element.style.background = "#FFFFFF";
 
-    square[row - 1][column - 1] = element;
+    squares[row - 1][column - 1] = element;
 
     if (column % 3 === 0) {
         row++
@@ -44,9 +43,9 @@ function check() {
     // Vertical Check
     for (let column = 0; column < 3; column++) {
 
-        const color1 = square[0][column].style.background;
-        const color2 = square[1][column].style.background;
-        const color3 = square[2][column].style.background;
+        const color1 = squares[0][column].style.background;
+        const color2 = squares[1][column].style.background;
+        const color3 = squares[2][column].style.background;
 
         if (color1 !== "rgb(255, 255, 255)" && color1 === color2 && color1 === color3) {
             win(color1);
@@ -57,9 +56,9 @@ function check() {
     // Horizontal Check
     for (let row = 0; row < 3; row++) {
 
-        const color1 = square[row][0].style.background;
-        const color2 = square[row][1].style.background;
-        const color3 = square[row][2].style.background;
+        const color1 = squares[row][0].style.background;
+        const color2 = squares[row][1].style.background;
+        const color3 = squares[row][2].style.background;
 
         if (color1 !== "rgb(255, 255, 255)" && color1 === color2 && color1 === color3) {
             win(color1);
@@ -68,25 +67,42 @@ function check() {
     }
 
     // Cross Check
-    let color1 = square[0][0].style.background;
-    let color2 = square[1][1].style.background;
-    let color3 = square[2][2].style.background;
+    let color1 = squares[0][0].style.background;
+    let color2 = squares[1][1].style.background;
+    let color3 = squares[2][2].style.background;
 
     if (color1 !== "rgb(255, 255, 255)" && color1 === color2 && color1 === color3) {
         win(color1);
     }
 
-    color1 = square[0][2].style.background;
-    color2 = square[1][1].style.background;
-    color3 = square[2][0].style.background;
+    color1 = squares[0][2].style.background;
+    color2 = squares[1][1].style.background;
+    color3 = squares[2][0].style.background;
 
     if (color1 !== "rgb(255, 255, 255)" && color1 === color2 && color1 === color3) {
         win(color1);
     }
 
+    // No Winner Check
+    const noWinnerSquares = [];
+    for (const square of squares) {
+        noWinnerSquares.push(square[0].style.background);
+        noWinnerSquares.push(square[1].style.background);
+        noWinnerSquares.push(square[2].style.background);
+    }
+
+    if (!noWinnerSquares.includes("rgb(255, 255, 255)"))
+        win("rgb(0, 0, 0)");
 }
 
 function win(color) {
+    if (color === "rgb(0, 0, 0)") {
+        const element = document.getElementById("gameState");
+        element.innerText = `No one won the game`;
+
+        setTimeout(clean, 1000);
+        return;
+    }
 
     let winner = "";
     if (color === "rgb(255, 0, 0)") {
@@ -99,7 +115,6 @@ function win(color) {
     element.innerText = `Player ${winner} Won`;
 
     setTimeout(clean, 1000);
-
 }
 
 function clean() {
@@ -109,7 +124,7 @@ function clean() {
 
     for (let i = 0; i < 9; i++) {
 
-        square[row - 1][column - 1].style.background = "#FFFFFF";
+        squares[row - 1][column - 1].style.background = "#FFFFFF";
 
         if (column % 3 === 0) {
             row++
