@@ -3,14 +3,24 @@
 }
 
 #game {
-    width: 22%;
+    width: 35%;
     margin: auto;
 }
 
 .square {
-    margin: -5px;
     border: 5px solid #000000;
     display: inline-block;
-    width: 135px;
     height: 135px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    min-width: 500px;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 135px;
+    text-align: center;
 }
