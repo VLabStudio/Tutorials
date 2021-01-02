@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real Time Polling App using Socket.io</title>
+  </head>
+  <body>
+   
+    <!-- Import dependencies -->
+    <!-- https://cdnjs.com/libraries/socket.io -->
+    <!-- https://cdnjs.com/libraries/Chart.js -->
+    <!-- https://getbootstrap.com/docs/5.0/getting-started/introduction -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.1/socket.io.min.js" integrity="sha512-gVG6WRMUYFaIdoocaxbqd02p3DUbhReTBWc7NTGB96i7vONrr7GuCZJHFFmkXEhpwilIWUnfRIMSlKaApwd/jg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <div class="container">
+      <div class="row">
+
+        <!-- The title -->
+        <h1 class="text-center">What is the best programming language?</h1>
+
+        <!-- The canvas -->
+        <canvas id="voteChart" style="height:50vh; width:100vw"></canvas>
+
+        <!-- The buttons -->
+        <div class="btn-group center" role="group">
+          <button type="button" id="button1" class="btn" onclick="vote(0)">JavaScript</button>
+          <button type="button" id="button2" class="btn" onclick="vote(1)">C#</button>
+          <button type="button" id="button3" class="btn" onclick="vote(2)">Python</button>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+
+      // Initialize the canvas
+      const ctx = document.getElementById("voteChart").getContext("2d");
+
+      // Initialize the chart
+      const chart = new Chart(ctx, {
+          type: "bar",
+          data: {
+              labels: ["Candidates"],
+          },
+          options: {
+
+          }
+      });
+
+      // Connect to the server it's (Here you want to change the port if you changed it in the server)
+      const socket = io("http://192.168.1.4:80");
+
+      // On new vote update the chart
+      socket.on("update", (candidates) => {
+
+        // Convert the candidates object into an array
+        candidates = Object.entries(candidates);
+
+        // For each candidate
+        for (const [key, candidate] of candidates) {
+
+          // Update the vote if the candidate already exists if not create a new candidate and then update the vote
+          if(typeof chart.data.datasets[key] == "undefined" && chart.data.datasets.length < candidates.length ) {
+            chart.data.datasets.push({
+                  backgroundColor: candidate.color,
+                  borderColor: candidate.color,
+                  data: [candidate.votes],
+                  label: candidate.label
+              });
+          } else  if(typeof chart.data.datasets[key] != "undefined") {
+            chart.data.datasets[key].data = [candidate.votes];
+          }
+
+        }
+
+        // Update the chart
+        chart.update();
+      });
+
+      // Make a new vote (Remember this is not a safe way to do this)
+      function vote(index) {
+        socket.emit("vote", index);
+      }
+
+    </script>
+  </body>
+</html>

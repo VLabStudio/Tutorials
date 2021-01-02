@@ -1,0 +1,32 @@
+#button1 {
+    color: #eeeeee;
+    background-color: #F38548;
+    border-color: #F38548;
+}
+
+#button1:hover {
+    background-color: #DA7740;
+    border-color: #DA7740;
+}
+
+#button2 {
+    color: #eeeeee;
+    background-color: #39ABCE;
+    border-color: #39ABCE;
+}
+
+#button2:hover {
+    background-color: #3399B9;
+    border-color: #3399B9;
+}
+
+#button3 {
+    color:#eeeeee;
+    background-color: #ca3f45;
+    border-color: #ca3f45;
+}
+
+#button3:hover {
+    background-color: #B5383E;
+    border-color: #B5383E;
+}
