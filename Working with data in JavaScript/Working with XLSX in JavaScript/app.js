@@ -46,7 +46,7 @@ worksheets.Sheet1.push({
     "Age": 35,
     "Date": "22/09/2020",
     "Id": 1600,
-    "New Row": "test"
+    "New Column": "test"
 });
 
 // // Update the XLSX file
