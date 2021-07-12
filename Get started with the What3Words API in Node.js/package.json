@@ -1,0 +1,17 @@
+{
+  "name": "what3words-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@what3words/api": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
